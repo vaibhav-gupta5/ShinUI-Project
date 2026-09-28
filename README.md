@@ -79,7 +79,7 @@ src/
 │   ├── categories/[slug]/    live components and resources per category
 │   ├── components/[slug]/    live preview, source, usage, attribution
 │   ├── resource/[slug]/      inline site preview, description, maker links
-│   └── about/
+│   └── portfolios/           personal sites and craft pages worth studying
 ├── components/
 │   ├── ui/                   shadcn primitives
 │   ├── browse-explorer.tsx   client-side search and filtering

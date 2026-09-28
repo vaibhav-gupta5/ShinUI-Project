@@ -63,22 +63,6 @@ export function SiteFooter() {
             </ul>
           </div>
         </div>
-
-        <div className="text-muted-foreground mt-10 flex flex-col gap-2 border-t pt-6 pb-16 text-xs sm:flex-row sm:items-center sm:justify-between sm:pb-6">
-          <p>
-            Built by{" "}
-            <a
-              href={SITE.author.github}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-foreground underline underline-offset-4"
-            >
-              {SITE.author.name}
-            </a>
-            . Every listed resource belongs to its own author.
-          </p>
-          <p>Next.js · Tailwind · shadcn/ui · Lucide</p>
-        </div>
       </div>
     </footer>
   );

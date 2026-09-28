@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { Blocks, Compass, LayoutGrid, Search } from "lucide-react";
+import { Blocks, Compass, LayoutGrid, PenTool, Search, UserRound } from "lucide-react";
 
 import {
   CommandDialog,
@@ -98,6 +98,19 @@ export function CommandMenu({ className }: { className?: string }) {
         />
         <CommandList>
           <CommandEmpty>Nothing matched that.</CommandEmpty>
+
+          <CommandGroup heading="Pages">
+            <CommandItem value="page portfolios sites" onSelect={() => go("/portfolios")}>
+              <UserRound />
+              <span>Portfolios</span>
+            </CommandItem>
+            <CommandItem value="page design tools spline three rive" onSelect={() => go("/design-tools")}>
+              <PenTool />
+              <span>Design Tools</span>
+            </CommandItem>
+          </CommandGroup>
+
+          <CommandSeparator />
 
           <CommandGroup heading="Components">
             {filteredRegistry.map((item) => (

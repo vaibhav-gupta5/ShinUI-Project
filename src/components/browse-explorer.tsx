@@ -53,7 +53,7 @@ export function BrowseExplorer({
   );
   const [activePricing, setActivePricing] = React.useState<Pricing[]>([]);
   const [activeStacks, setActiveStacks] = React.useState<string[]>([]);
-  const [sort, setSort] = React.useState<Sort>("featured");
+  const [sort, setSort] = React.useState<Sort>("newest");
   const [savedOnly, setSavedOnly] = React.useState(false);
   const [refreshKey, setRefreshKey] = React.useState(0);
 
@@ -292,10 +292,10 @@ export function BrowseExplorer({
               aria-label="Sort results"
               className="border-input bg-background h-10 rounded-md border px-3 text-sm shadow-xs outline-none"
             >
+              <option value="newest">Newest</option>
               <option value="featured">Featured first</option>
               <option value="saved">Saved first</option>
               <option value="name">A–Z</option>
-              <option value="newest">Newest</option>
             </select>
           </div>
         </div>

@@ -2,9 +2,12 @@ export const primaryNav = [
   { href: "/", label: "Home", icon: "Home" },
   { href: "/browse", label: "Browse", icon: "Compass" },
   { href: "/components", label: "Components", icon: "Blocks" },
+  { href: "/portfolios", label: "Portfolios", icon: "UserRound" },
+  { href: "/design-tools", label: "Design Tools", icon: "PenTool" },
   { href: "/categories", label: "Categories", icon: "LayoutGrid" },
-  { href: "/about", label: "About", icon: "Info" },
 ] as const;
 
-/** The bottom bar drops "About" — five targets is already tight on a phone. */
-export const mobileTabs = primaryNav.filter((item) => item.href !== "/about");
+/** The bottom bar stays at four targets — the rest live in the header menu. */
+export const mobileTabs = primaryNav.filter((item) =>
+  ["/", "/browse", "/components", "/categories"].includes(item.href)
+);

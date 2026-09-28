@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { ArrowRight, Layers, Search, Sparkles } from "lucide-react";
+import { ArrowRight, Layers, Search } from "lucide-react";
 import dynamic from "next/dynamic";
 
 import { GitHubIcon } from "@/components/icons";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CategoryIcon } from "@/components/category-icon";
 import { HeroBackdrop } from "@/components/hero-backdrop";
@@ -37,16 +36,7 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge
-              variant="outline"
-              className="bg-background/70 border-border/60 shadow-xs backdrop-blur-md"
-            >
-              <Sparkles className="size-3" />
-              {resources.length} resources · {categories.length} categories ·{" "}
-              {registry.length} live components
-            </Badge>
-
-            <h1 className="mt-5 text-4xl font-semibold tracking-tight text-balance sm:text-6xl">
+            <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-6xl">
               Every design resource you keep losing,{" "}
               <span className="text-brand">in one place</span>
             </h1>
