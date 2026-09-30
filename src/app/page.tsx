@@ -7,6 +7,7 @@ import { GitHubIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { CategoryIcon } from "@/components/category-icon";
 import { HeroBackdrop } from "@/components/hero-backdrop";
+import { HeroKanjiPond } from "@/components/hero-kanji-pond";
 import { categories } from "@/data/categories";
 import { resources } from "@/data/resources";
 import { registry } from "@/registry";
@@ -46,8 +47,12 @@ export default function HomePage() {
               and credited to whoever built them. Plus {registry.length} components
               you can preview live and copy straight into your project.
             </p>
+          </div>
 
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <HeroKanjiPond />
+
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mt-2 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button size="xl" asChild>
                 <Link href="/browse">
                   <Search className="size-4" />

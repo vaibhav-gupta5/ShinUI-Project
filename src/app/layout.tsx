@@ -92,6 +92,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&text=%E7%AF%A0%E5%B4%8E&display=swap"
+        />
       </head>
       <body className="min-h-dvh font-sans">
         <ThemeProvider
