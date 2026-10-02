@@ -3283,8 +3283,35 @@ export const resources: Resource[] = [
     pricing: "freemium",
     addedAt: "2026-09-29",
   },
+ {
+    slug: "shadcnspace",
+    name: "Shadcn Space",
+    tagline: "1000+ resources built on shadcn/ui",
+    description:
+      "Extraordinary Shadcn UI blocks, components, and templates.",
+    url: "https://shadcnspace.com/",
+    category: "blocks-templates",
+    tags: ["shadcn-compatible", "large-catalog", "sections"],
+    stack: ["React", "Tailwind"],
+    pricing: "freemium",
+    featured: true,
+    addedAt: "2026-10-02",
+  },     
+ {
+    slug: "shadcndashboard",
+    name: "Shadcn Dashboard",
+    tagline: "600+ resources built on shadcn/ui",
+    description:
+      "Build an admin panel better with the complete shadcn dashboard kit.",
+    url: "https://shadcndashboard.dev/",
+    category: "blocks-templates",
+    tags: ["shadcn-compatible", "large-catalog", "sections"],
+    stack: ["React", "Tailwind"],
+    pricing: "freemium",
+    featured: true,
+    addedAt: "2026-10-02",
+  },
 ];
-
 export const resourceBySlug = new Map(resources.map((r) => [r.slug, r]));
 
 export function getResource(slug: string) {
